@@ -143,7 +143,7 @@ identificador de longitud 3: xyz
 
 ### Contexto
 
-En la sección de definiciones de un archivo `.l` podés declarar **variables globales** y hacer `#include` de headers externos. Esto permite mantener estado entre reglas (como un contador) y llamar a funciones propias.
+En la sección de definiciones de un archivo `.l` podés declarar **variables globales** y hacer `#include` de  headers externos. Esto permite mantener estado entre reglas (como un contador) y llamar a funciones propias.
 
 ### Qué hacer
 
@@ -179,7 +179,7 @@ El doble es: 8
 
 ### Contexto
 
-Un analizador léxico real no imprime texto: **retorna tokens** al parser. Cada token es un valor entero que identifica el tipo léxico. La variable `yylval` transporta el valor semántico (el número encontrado, por ejemplo).
+Un analizado  r léxico real no imprime texto: **retorna tokens** al parser. Cada token es un valor entero que identifica el tipo léxico. La variable `yylval` transporta el valor semántico (el número encontrado, por ejemplo).
 
 ### Qué hacer
 
@@ -220,21 +220,21 @@ Respondé cada pregunta reemplazando el espacio en blanco con la opción correct
 Opciones: `ECHO` | `IGNORA` | `ERROR`
 
 ```
-P1=
+P1=ECHO
 ```
 
 **P2** — Cuando dos reglas coinciden con **exactamente la misma cantidad de caracteres**, ¿cuál elige Flex?
 Opciones: `LA_PRIMERA` | `LA_ULTIMA` | `ALEATORIA`
 
 ```
-P2=
+P2=LA_PRIMERA
 ```
 
 **P3** — ¿`yyleng` contiene la cantidad de caracteres del lexema reconocido por la regla actual?
 Opciones: `SI` | `NO`
 
 ```
-P3=
+P3=SI
 ```
 
 ---
